@@ -31,6 +31,9 @@ namespace Zoo {
     }
 
     void Animal::setName(string name) {
-        this->name = name;
+        if(name.empty() == false)
+            this->name = name;
+        else 
+            throw new NameException();
     }
 }

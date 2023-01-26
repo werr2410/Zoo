@@ -18,8 +18,15 @@ namespace Zoo {
     }
 
     void System::pushAnimal(Animal* animal) {
+        if(v_animal.size() != 0) { 
+            if(animal->getisPredator() == true && v_animal[0]->getisPredator() == false) 
+                throw new PredatorException();            
+        }
+
         if(v_animal.size() + 1 <= m_Animal){
             v_animal.push_back(animal);
+        } else {
+            throw new MaxCapacityException();
         }
     }
 

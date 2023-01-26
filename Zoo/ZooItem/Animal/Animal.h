@@ -1,4 +1,5 @@
 #pragma once
+#include "../Exception/ZooExecptionItem/Exceptions.h"
 #include <string>
 
 using std::string;

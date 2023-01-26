@@ -2,6 +2,7 @@
 #include "../AnimalItems/Beast.cpp"
 #include "../AnimalItems/Bird.cpp"
 #include "../AnimalItems/Fish.cpp"
+#include "../Exception/ZooExecptionItem/Exceptions.h"
 #include <vector>
 
 using std::vector;
@@ -29,7 +30,7 @@ namespace Zoo {
         void repushAnimal(Animal* oldAnimal, Animal* newAnimal);
         Animal* getAnimal(int index);
 
-        
+
     };
 }
 
