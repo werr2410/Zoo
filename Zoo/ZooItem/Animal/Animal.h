@@ -5,7 +5,7 @@ using std::string;
 
 namespace Zoo {
     class Animal {
-    private:
+    protected:
         string name;
         string description;
         bool isPredator;
